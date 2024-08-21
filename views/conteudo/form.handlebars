@@ -1,0 +1,45 @@
+
+<title>Cadastrar Produto</title>
+<link rel="stylesheet" href="../Css/est1.css">
+
+{{#if sucess_msg}}
+  <div id="suc">{{sucess_msg}}</div>
+{{/if}}
+
+{{#if error_msg}}
+  <div id="erro">{{error_msg}}</div>
+{{/if}}
+
+<h1>Cadastrar Roupas</h1>
+<div id="container">
+  <form action="/cad" enctype="multipart/form-data" method="post">
+    <input required name="Produto" type="text" placeholder="Nome do produto">
+    <input required name="Valor" type="number" placeholder="Valor do produto">
+      <input min="0.0" max="500.000" required name="File" id="file" type="file" placeholder="Escolher Ficheiro">
+  <div>
+    <button id="button" type="submit">Cadastrar</button>
+  </div>
+  </form>
+</div>
+
+<div id="contP">
+{{#each crudes}}
+  <div id="Produto">
+  <div>
+    <img src="../img/{{File}}">
+    <p>Produto: {{Produto}}</p>
+    <p>Valor: {{Valor}} Kz</p>
+    <div id="btns">
+      <a href="/Editar/{{id}}">
+        <button id="Ed">Editar</button>
+      </a>
+      <a href="/delete/{{id}}/{{File}}/">
+        <button id="El">
+          Eliminar
+        </button>
+      </a>
+    </div>
+  </div>
+  </div>
+{{/each}}
+</div>

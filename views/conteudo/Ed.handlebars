@@ -1,0 +1,18 @@
+
+<title>Editar Produto</title>
+<link rel="stylesheet" href="../Css/est1.css">
+
+<img style="margin-top: 40px;" src="../img/{{crude.File}}">
+
+<div style="margin-top: 20px;" id="container">
+  <form action="/Ed/{{crude.id}}" enctype="multipart/form-data" method="post">
+    <input type="hidden" name="novaImg" value="{{crude.File}}">
+    <input value="{{crude.Produto}}" required name="Produto" type="text" placeholder="Nome do produto">
+    <input value="{{crude.Valor}}" required name="Valor" type="number" placeholder="Valor do produto">
+    
+      <input required name="File" id="file" type="file" placeholder="Escolher Ficheiro">
+  <div>
+    <button id="button" type="submit">Editar</button>
+  </div>
+  </form>
+</div>

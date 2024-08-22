@@ -1,4 +1,4 @@
-var Sequelize=require("Sequelize");
+var Sequelize=require("sequelize");
 
 var sequelize=new Sequelize("bdnz5pzyr7xnyyvwpkat", "uyypxsgdtztqstyv", "tINYin2HMrGe4b5uAaYi", {
   host:"bdnz5pzyr7xnyyvwpkat",

@@ -1,6 +1,6 @@
 var express=require('express');
 
-var porta=3000;
+var porta=process.env.PORT || 3000
 
 var flash=require('connect-flash')
 

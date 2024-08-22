@@ -1,7 +1,7 @@
 var Sequelize=require("sequelize");
 
 var sequelize=new Sequelize("bdnz5pzyr7xnyyvwpkat", "uyypxsgdtztqstyv", "tINYin2HMrGe4b5uAaYi", {
-  host:"bdnz5pzyr7xnyyvwpkat",
+  host:"bdnz5pzyr7xnyyvwpkat-mysql.services.clever-cloud.com",
   dialect: "mysql"
 })
 

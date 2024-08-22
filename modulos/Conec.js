@@ -24,6 +24,6 @@ var crude=sequelize.define(
   }
 })
 
-module.exports=crude;
-
 crude.sync({force: true})
+
+module.exports=crude;

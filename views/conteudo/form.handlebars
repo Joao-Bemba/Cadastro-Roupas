@@ -21,25 +21,3 @@
   </div>
   </form>
 </div>
-
-<div id="contP">
-{{#each crudes}}
-  <div id="Produto">
-  <div>
-    <img src="../img/{{File}}">
-    <p>Produto: {{Produto}}</p>
-    <p>Valor: {{Valor}} Kz</p>
-    <div id="btns">
-      <a href="/Editar/{{id}}">
-        <button id="Ed">Editar</button>
-      </a>
-      <a href="/delete/{{id}}/{{File}}/">
-        <button id="El">
-          Eliminar
-        </button>
-      </a>
-    </div>
-  </div>
-  </div>
-{{/each}}
-</div>

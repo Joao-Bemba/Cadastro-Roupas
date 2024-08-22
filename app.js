@@ -61,10 +61,14 @@ app.use('/Css', express.static('./Css'))
 
 
 app.get('/', (req, res)=>{
+    res.render("conteudo/form")
+})
+
+app.get("/lista", (req, res)=>{
   crude.findAll().then((crudes)=>{
-    res.render("conteudo/form", {crudes:crudes})
+    res.render("conteudo/lista", {crudes:crudes})
   }).catch((erro)=>{
-    res.send("erro 404!")
+    res.send("Erro 404")
   })
 })
 
